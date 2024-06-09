@@ -11,7 +11,6 @@ const ActivityPreview: React.FC<ActivityPreviewProps> = ({ activity, onToggleAct
     const [isDone, setIsDone] = useState(activity.isDone)
 
     const handleToggle = (activityId: string) => {
-        console.log('here');
         setIsDone(!isDone)
         onToggleActivity(activityId)
     }
@@ -26,7 +25,7 @@ const ActivityPreview: React.FC<ActivityPreviewProps> = ({ activity, onToggleAct
                 <span className="activity-preview-description">{activity.description}</span>
             </div>
             <div className="activity-preview-duration-container">
-                <span className="activity-preview-duration">{activity.duration}</span>
+                <span className="activity-preview-duration">{activity.duration} min</span>
             </div>
 
         </section>
