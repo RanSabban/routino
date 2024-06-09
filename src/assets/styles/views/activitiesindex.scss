@@ -1,0 +1,16 @@
+.acitivities-index-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .activities-title-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        .activities-title {
+            padding: 5px;
+            font-size: 2rem;
+            color: whitesmoke;
+        }
+    }
+}
